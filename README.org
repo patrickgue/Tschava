@@ -1,0 +1,92 @@
+#+TITLE:Tschava
+* Beschribig
+
+/Tschava/ isch es programm wo du chasch /java/ in schwizerdütsch schribe. (ok, dennhalt, züridütsch)
+
+* Bischpil
+
+*Tschava Bischpil Datei*
+#+BEGIN_EXAMPLE
+päckli ch.patrickguenthard.tschava oder?
+
+öffentlichi klass Tescht {
+  private Tegscht öpfel oder?
+
+  öffentliche Tescht(Tegscht öpfel) {
+    min.öpfel = öpfel oder?
+  }
+
+  öffentliche Tescht() {
+    min.öpfel = nüt oder?
+  }
+
+  öffentlichi läri zeigÖpfel() {
+    wenn(öpfel == nüt) {
+      fluech("De öpfel isch nöd definiert") oder?
+    }
+    suscht {
+      säg(öpfel) oder?
+    }
+  }
+
+  öffentlichi läri setzÖpfel(Tegscht öpfel) {
+    min.öpfel = öpfel oder?
+  }
+
+  öffentliche Tegscht gibÖpfel() {
+    zruggeh öpfel oder?
+  }
+}
+#+END_EXAMPLE
+ 
+
+*Java usgab:*
+#+BEGIN_EXAMPLE
+package ch.patrickguenthard.tschava;
+
+public class Tescht {
+  private java.lang.String oepfel;
+
+  public Tescht(java.lang.String oepfel) {
+    this.oepfel = oepfel;
+  }
+
+  public Tescht() {
+    this.oepfel = null;
+  }
+
+  public void zeigOepfel() {
+    if(oepfel == null) {
+      System.err.println("De oepfel isch noed definiert");
+    }
+    elset {
+      System.out.println(oepfel);
+    }
+  }
+
+  public void setzOepfel(java.lang.String oepfel) {
+    this.oepfel = oepfel;
+  }
+
+  public java.lang.String gibOepfel() {
+    return oepfel;
+  }
+}
+#+END_EXAMPLE
+
+
+* Chan ich das au mache?
+
+*Ja!*
+
+zersch muesch s programm abelade. Denn kompiliere:
+
+#+BEGIN_EXAMPLE
+mvn clean install
+#+END_EXAMPLE
+
+Denn isches scho bereit! S JAR findsch im ordner /target/
+
+#+BEGIN_EXAMPLE
+java -jar target/tschava-0.0.1.jar tschavafile.tschava javafile.java
+#+END_EXAMPLE

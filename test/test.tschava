@@ -1,0 +1,34 @@
+päckli ch.patrickguenthard.tschava oder?
+
+öffentlichi klass Tescht {
+  private Tegscht öpfel oder?
+
+  öffentliche Tescht(Tegscht öpfel) {
+    min.öpfel = öpfel oder?
+  }
+
+  öffentliche Tescht() {
+    min.öpfel = nüt oder?
+  }
+
+  öffentlichi läri zeigÖpfel() {
+    wenn(öpfel == nüt) {
+      fluech("De öpfel isch nöd definiert") oder?
+    }
+    suscht {
+      säg(öpfel) oder?
+    }
+  }
+
+  öffentlichi läri setzÖpfel(Tegscht öpfel) {
+    min.öpfel = öpfel oder?
+  }
+
+  öffentliche Tegscht gibÖpfel() {
+    zruggeh öpfel oder?
+  }
+
+  privati läri tescht() {
+    fluech("äs gaht!") oder?
+  }
+}
