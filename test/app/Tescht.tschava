@@ -1,0 +1,26 @@
+öffentlichi klass Tescht {
+    private Tegscht teschtSach oder?
+	//privati Lischte teschtSache oder?
+    
+    
+    private Tescht() {
+	teschtSach = "Sali Zäme!" oder?
+	    //teschtSache = neui SammligsLischte<Tegscht>();
+    }
+
+    öffentliche Tegscht gibTeschtSach() {
+	zruggeh mini.teschtSach oder?
+    }
+
+    /*öffentlichi Lischte gibTeschtSache() {
+	zruggeh mini.teschtSache oder?
+	}*/
+
+    öffentlichi statischi läri main(Tegscht[] argumänt) {
+	Tescht t = neue Tescht() oder?
+	säg(t.gibTeschtSach()) oder?
+	    /*für(Tegscht t : gibTeschtSache()) {
+	    säg(t) oder?
+	    }*/
+    }
+}

@@ -20,16 +20,26 @@ public class Data {
         keywords.put("private", "private");
         keywords.put("privati", "private");
         keywords.put("gschützti", "protected");
-        keywords.put("gschützte", "protected");
-        keywords.put("wenn", "if");
+	keywords.put("gschützte", "protected");
+	keywords.put("statischi", "static");
+        keywords.put("statische", "static");
+	keywords.put("wenn", "if");
         keywords.put("susch", "else");
         keywords.put("läri", "void");
         keywords.put("klass", "class");
         keywords.put("schnittstell", "interface");
+	keywords.put("macht nah", "implement");
+	keywords.put("erwiteret", "extends");
         keywords.put("nüt", "null");
-        keywords.put("min", "this");
-        keywords.put("mini", "this");
+	keywords.put("mini", "this");
+	keywords.put("min", "this");
         keywords.put("zruggeh", "return");
+	keywords.put("neue", "new");
+	keywords.put("neui", "new");
+	keywords.put("solang", "while");
+	keywords.put("mach", "do");
+	keywords.put("für", "for");
+	
 
         //System methods
         keywords.put("säg", "System.out.println");
@@ -43,8 +53,8 @@ public class Data {
         keywords.put("langi nummere", "long");
         keywords.put("Komma Zahl", "java.lang.Double");
         keywords.put("komma Zahl", "double");
-
-
+	keywords.put("Lischte", "java.util.List");
+	keywords.put("SammligsLischte", "java.util.ArrayList");
 
 
     }
@@ -53,7 +63,7 @@ public class Data {
     private static void initUmlauts() {
         umlauts = new HashMap<>();
         umlauts.put("ä","ae");
-        umlauts.put("Å","Ae");
+        umlauts.put("Ä","Ae");
         umlauts.put("ö","oe");
         umlauts.put("Ö","Oe");
         umlauts.put("ü","ue");
