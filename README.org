@@ -7,34 +7,38 @@
 
 *Tschava Bischpil Datei*
 #+BEGIN_EXAMPLE
-päckli ch.patrickguenthard.tschava oder?
+päckli ch.patrickguenthard.tschava ;
 
 öffentlichi klass Tescht {
-  private Tegscht öpfel oder?
+  private Tegscht öpfel ;
 
   öffentliche Tescht(Tegscht öpfel) {
-    min.öpfel = öpfel oder?
+    min.öpfel = öpfel ;
   }
 
   öffentliche Tescht() {
-    min.öpfel = nüt oder?
+    min.öpfel = nüt ;
+  }
+
+  startfunktion {
+    Tescht t = neue Tescht() ;
   }
 
   öffentlichi läri zeigÖpfel() {
     wenn(öpfel == nüt) {
-      fluech("De öpfel isch nöd definiert") oder?
+      fluech("De öpfel isch nöd definiert") ;
     }
     suscht {
-      säg(öpfel) oder?
+      säg(öpfel) ;
     }
   }
 
   öffentlichi läri setzÖpfel(Tegscht öpfel) {
-    min.öpfel = öpfel oder?
+    min.öpfel = öpfel ;
   }
 
   öffentliche Tegscht gibÖpfel() {
-    zruggeh öpfel oder?
+    zruggeh öpfel ;
   }
 }
 #+END_EXAMPLE
