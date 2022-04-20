@@ -23,6 +23,8 @@ public class Data {
 	keywords.put("gschützte", "protected");
 	keywords.put("statischi", "static");
         keywords.put("statische", "static");
+        keywords.put("finale", "final");
+        keywords.put("finali", "final");
 	keywords.put("wenn", "if");
         keywords.put("susch", "else");
         keywords.put("läri", "void");
@@ -55,6 +57,9 @@ public class Data {
         keywords.put("komma Zahl", "double");
 	keywords.put("Lischte", "java.util.List");
 	keywords.put("SammligsLischte", "java.util.ArrayList");
+
+        // bruchts immer
+        keywords.put("startfunktion", "public static void main(String[] args)");
 
 
     }

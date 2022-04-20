@@ -20,6 +20,10 @@ päckli ch.patrickguenthard.tschava oder?
     min.öpfel = nüt oder?
   }
 
+  startfunktion {
+    Tescht t = neue Tescht() oder?
+  }
+
   öffentlichi läri zeigÖpfel() {
     wenn(öpfel == nüt) {
       fluech("De öpfel isch nöd definiert") oder?
