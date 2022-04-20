@@ -7,6 +7,8 @@ import java.util.Map;
  * Created by patrick on 19.04.17.
  */
 public class Data {
+    public static String PRAGMA = "#hiwis";
+    
     private static Map<String, String> keywords;
     private static Map<String, String> umlauts;
 
