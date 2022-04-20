@@ -13,7 +13,7 @@ public class Data {
     public static void initKeywords() {
         keywords = new HashMap<>();
         //Control Structure
-        //keywords.put(" oder\\?", ";"); semikolon ftw
+        keywords.put(" oder\\?", ";");
         keywords.put("päckli", "package");
         keywords.put("öffentliche", "public");
         keywords.put("öffentlichi", "public");
