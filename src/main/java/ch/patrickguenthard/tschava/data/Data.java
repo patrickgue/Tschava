@@ -17,6 +17,7 @@ public class Data {
         //Control Structure
         keywords.put(" oder\\?", ";");
         keywords.put("päckli", "package");
+	keywords.put("inezieh", "import");
         keywords.put("öffentliche", "public");
         keywords.put("öffentlichi", "public");
         keywords.put("private", "private");
@@ -43,6 +44,8 @@ public class Data {
 	keywords.put("solang", "while");
 	keywords.put("mach", "do");
 	keywords.put("für", "for");
+	keywords.put("versuech", "try");
+	keywords.put("fang", "catch");
 	
 
         //System methods
@@ -58,10 +61,17 @@ public class Data {
         keywords.put("Komma Zahl", "java.lang.Double");
         keywords.put("komma Zahl", "double");
 	keywords.put("Lischte", "java.util.List");
+	keywords.put("PuffereteLeser", "java.io.BufferedReader");
+	keywords.put("PuffereteSchriber", "java.io.BufferedWriter");
+	keywords.put("DateiLeser", "java.io.FileReader");
+	keywords.put("DateiSchriber", "java.io.FileWriter");
+	keywords.put("Datei", "java.io.File");
 	keywords.put("SammligsLischte", "java.util.ArrayList");
+	keywords.put("Usnahm ", "java.lang.Exception ");
 
         // bruchts immer
         keywords.put("startfunktion", "public static void main(String[] args)");
+	keywords.put(".zeigUsnahmVerlauf", ".printStackStrace");
 
 
     }
