@@ -17,6 +17,7 @@ public class TschavaCompiler {
 	while ((line = reader.readLine()) != null) {
 	    if (line.indexOf(Data.PRAGMA) >= 0) {
 		parsePragma(line);
+		continue;
 	    }
 	    for(Map.Entry<String,String> d : Data.getKeywords().entrySet()) {
 		line = line.replaceAll(d.getKey(), d.getValue());
@@ -33,10 +34,10 @@ public class TschavaCompiler {
 
     private void parsePragma(String line) {
 	if (line.indexOf("umluut") >= 0) {
-	    if (line.indexOf("umluut ab") >= 0) {
-		this.ignoreUmlautMode = false;
-	    } else if (line.indexOf("umluut a") >= 0) {
+	    if (line.indexOf("ab") >= 0) {
 		this.ignoreUmlautMode = true;
+	    } else if (line.indexOf("a") >= 0) {
+		this.ignoreUmlautMode = false;
 	    }
 	}
     }
