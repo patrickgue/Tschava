@@ -33,10 +33,10 @@ public class TschavaCompiler {
     }
 
     private void parsePragma(String line) {
-	if (line.indexOf("umluut") >= 0) {
-	    if (line.indexOf("ab") >= 0) {
+	if (line.indexOf(Data.UMLUUT) >= 0) {
+	    if (line.indexOf(Data.PRAGMA_OFF) >= 0) {
 		this.ignoreUmlautMode = true;
-	    } else if (line.indexOf("a") >= 0) {
+	    } else if (line.indexOf(Data.PRAGMA_ON) >= 0) {
 		this.ignoreUmlautMode = false;
 	    }
 	}

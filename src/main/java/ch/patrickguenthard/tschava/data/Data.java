@@ -8,6 +8,12 @@ import java.util.Map;
  */
 public class Data {
     public static String PRAGMA = "#hiwis";
+
+    public static String UMLUUT = "umluut";
+
+    public static String PRAGMA_ON = "a";
+    public static String PRAGMA_OFF = "ab";
+    
     
     private static Map<String, String> keywords;
     private static Map<String, String> umlauts;
@@ -46,7 +52,8 @@ public class Data {
 	keywords.put("für", "for");
 	keywords.put("versuech", "try");
 	keywords.put("fang", "catch");
-	
+	keywords.put("rüert", "throws");
+	keywords.put("gang witer", "continue");	
 
         //System methods
         keywords.put("säg", "System.out.println");
@@ -56,22 +63,33 @@ public class Data {
         keywords.put("Tegscht", "java.lang.String");
         keywords.put("Nummere", "java.lang.Integer");
         keywords.put("nummere", "int");
-        keywords.put("Langi Nummere", "java.lang.Long");
+	keywords.put("logisch", "boolean");
+        keywords.put("Logisch", "java.lang.Boolean");
+	keywords.put("Langi Nummere", "java.lang.Long");
         keywords.put("langi nummere", "long");
         keywords.put("Komma Zahl", "java.lang.Double");
         keywords.put("komma Zahl", "double");
 	keywords.put("Lischte", "java.util.List");
+	keywords.put("SammligsLischte", "java.util.ArrayList");
+	keywords.put("Karte", "java.util.Map");
+	keywords.put("HashKarte", "java.util.HashMap");
 	keywords.put("PuffereteLeser", "java.io.BufferedReader");
 	keywords.put("PuffereteSchriber", "java.io.BufferedWriter");
 	keywords.put("DateiLeser", "java.io.FileReader");
 	keywords.put("DateiSchriber", "java.io.FileWriter");
 	keywords.put("Datei", "java.io.File");
-	keywords.put("SammligsLischte", "java.util.ArrayList");
 	keywords.put("Usnahm ", "java.lang.Exception ");
 
         // bruchts immer
         keywords.put("startfunktion", "public static void main(String[] args)");
-	keywords.put(".zeigUsnahmVerlauf", ".printStackStrace");
+	keywords.put("\\.zeigUsnahmVerlauf", ".printStackStrace");
+	keywords.put("\\.schlüsse", ".close");
+	keywords.put("\\.schrib", ".write");
+	keywords.put("\\.liesLinie", ".readLine");
+	keywords.put("\\.indexVo", ".indexOf");
+	keywords.put("\\.ersetzAll", ".replaceAll");
+	
+	
 
 
     }
