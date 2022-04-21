@@ -1,0 +1,27 @@
+päckli ch.patrickguenthard.tschava oder?
+
+
+inezieh ch.patrickguenthard.tschava.compiler.TschavaCompiler oder?
+inezieh java.io.* oder?
+
+öffentlichi klass Tschava {
+    startfunktion {
+	TschavaCompiler kompilierer oder?
+
+	wenn(args.length < 2) {
+#hiwis umluut ab
+	    fluech("Gopfridschtutz! Nöd gnueg parameter!\nEs brucht e tschava datei als igab und e java datei als usgab als parameter!") oder?
+#hiwis umluut a
+            Tegscht igangDatei = args[0] oder?
+	    Tegscht usgangDatei = args[1] oder?
+	    versuech {
+	        PuffereteLeser leser = neue PuffereteLeser(neue DateilLeser(neui Datei(igangDatei))) oder?
+	        PuffereteSchriber schriber = neue PuffereteSchriber(neue DateiSchriber(neui Datei(usgangDatei))) oder?
+	        kompilierer.kompilier(leser, schriber) oder?
+	    } fang (Usnahm u) {
+                fluech("S het ned funktioniert") oder?
+	        u.zeigUsnahmVerlauf() oder?
+            }
+	}
+    }
+}
