@@ -1,0 +1,50 @@
+päckli ch.patrickguenthard.tschava.compiler;
+
+inezieh ch.patrickguenthard.tschava.data.Data;
+
+inezieh java.util.Map;
+
+
+/**
+ * Created by patrick on 19.04.17.
+ */
+öffentlichi klass TschavaCompiler {
+    privati logisch umluutIgnoriere = falsch oder?
+    privati logisch schluesselwoerterIgnoriere = falsch oder?
+
+    öffentlichi läri kompillier(PuffereteLeser leser, PuffereteSchriber schriber) rüert Usnahm {
+	Tegscht linie;
+	solang ((linie = leser.liesLinie()) != null) {
+	    wenn (linie.indexVo(Data.HIWIS) >= 0) {
+		parseHiwis(linie);
+		gang witer;
+	    }
+	    für (Map.Entry<String,String> d : Data.getKeywords().entrySet()) {
+		linie = linie.ersetzAll(d.getKey(), d.getValue());
+	    }
+	    wenn (!umluutIgnoriere) {
+		für (Map.Entry<String,String> d : Data.getUmlauts().entrySet()) {
+		    linie = linie.ersetzAll(d.getKey(), d.getValue());
+		}
+	    }
+	    schriber.schrib(line + "\n");
+	}
+	schriber.schlüsse();
+    }
+
+    privati läri parseHiwis(Tegscht linie) {
+	wenn (linie.indexOf(Data.UMLUUT) >= 0) {
+	    wenn (linie.indexOf(Data.HIWIS_AB) >= 0) {
+		min.umluutIgnoriere = true;
+	    } susch wenn (linie.indexOf(Data.HIWIS_A) >= 0) {
+		min.umluutIgnoriere = false;
+	    }
+	} susch wenn (linie.indexVo(Data.SCHLUESSELWOERTER) >= 0) {
+	    wenn (linie.indexVo(Data.PRAGMA_OFF) >= 0) {
+		min.schluesselwoerterIgnore = wahr;
+	    } susch wenn (linie.indexVo(Data.PRAGMA_ON) >= 0) {
+		mini.schluesselwoerterIgnore = falsch;
+	    }
+	}
+    }
+}

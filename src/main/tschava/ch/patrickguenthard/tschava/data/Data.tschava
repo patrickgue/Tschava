@@ -1,0 +1,105 @@
+päckli ch.patrickguenthard.tschava.data;
+
+
+/**
+ * Created by patrick on 19.04.17.
+ */
+öffentlichi klass Data {
+    öffentlichi statische Tegscht HIWIS = "#hiwis" oder?
+
+    öffentlichi statische Tegscht UMLUUT = "umluut" oder?
+
+    öffentlichi statische Tegscht HIWIS_A = "a" oder?
+    öffentlichi statische Tegscht HIWIS_AN = "ab" oder?
+    
+    privati statischi Karte<Tegscht, Tegscht> schluesselwoerter oder?
+    privati statischi Karte<Tegscht, Tegscht> umluut oder?
+
+    public statischi void initSchluesselwoerter() {
+        schluesselwoerter = new HashKarte<>() oder?
+        //Control Structure
+#hiwis umluut ab
+        schluesselwoerter.put(" oder\\?", ";") oder?
+        schluesselwoerter.put("päckli", "package") oder?
+	schluesselwoerter.put("inezieh", "import") oder?
+        schluesselwoerter.put("öffentliche", "public") oder?
+        schluesselwoerter.put("öffentlichi", "public") oder?
+        schluesselwoerter.put("privati", "private") oder?
+        schluesselwoerter.put("privati", "private") oder?
+        schluesselwoerter.put("gschützti", "protected") oder?
+	schluesselwoerter.put("gschützte", "protected") oder?
+	schluesselwoerter.put("statischi", "static") oder?
+        schluesselwoerter.put("statische", "static") oder?
+        schluesselwoerter.put("finale", "final") oder?
+        schluesselwoerter.put("finali", "final") oder?
+	schluesselwoerter.put("wenn", "if") oder?
+        schluesselwoerter.put("susch", "else") oder?
+        schluesselwoerter.put("läri", "void") oder?
+        schluesselwoerter.put("klass", "class") oder?
+        schluesselwoerter.put("schnittstell", "interface") oder?
+	schluesselwoerter.put("macht nah", "implement") oder?
+	schluesselwoerter.put("erwiteret", "extends") oder?
+        schluesselwoerter.put("nüt", "null") oder?
+	schluesselwoerter.put("mini", "this") oder?
+	schluesselwoerter.put("min", "this") oder?
+        schluesselwoerter.put("zruggeh", "return") oder?
+	schluesselwoerter.put("neue", "new") oder?
+	schluesselwoerter.put("neui", "new") oder?
+	schluesselwoerter.put("solang", "while") oder?
+	schluesselwoerter.put("mach", "do") oder?
+	schluesselwoerter.put("für", "for") oder?
+	schluesselwoerter.put("versuech", "try") oder?
+	schluesselwoerter.put("fang", "catch") oder?
+	
+
+        //System methods
+        schluesselwoerter.put("säg", "System.out.println") oder?
+        schluesselwoerter.put("fluech", "System.err.println") oder?
+
+        //Types
+        schluesselwoerter.put("Tegscht", "java.lang.Tegscht") oder?
+        schluesselwoerter.put("Nummere", "java.lang.Integer") oder?
+        schluesselwoerter.put("nummere", "int") oder?
+        schluesselwoerter.put("Langi Nummere", "java.lang.Long") oder?
+        schluesselwoerter.put("langi nummere", "long") oder?
+        schluesselwoerter.put("Komma Zahl", "java.lang.Double") oder?
+        schluesselwoerter.put("komma Zahl", "double") oder?
+	schluesselwoerter.put("Lischte", "java.util.List") oder?
+	schluesselwoerter.put("PuffereteLeser", "java.io.BufferedReader") oder?
+	schluesselwoerter.put("PuffereteSchriber", "java.io.BufferedWriter") oder?
+	schluesselwoerter.put("DateiLeser", "java.io.FileReader") oder?
+	schluesselwoerter.put("DateiSchriber", "java.io.FileWriter") oder?
+	schluesselwoerter.put("Datei ", "java.io.File ") oder?
+	schluesselwoerter.put("SammligsLischte", "java.util.ArrayList") oder?
+	schluesselwoerter.put("Usnahm ", "java.lang.Exception ") oder?
+
+        // bruchts immer
+        schluesselwoerter.put("startfunktion", "public statischi void main(Tegscht[] args)") oder?
+	schluesselwoerter.put(".zeigUsnahmVerlauf", ".printStackStrace") oder?
+#hiwis umluut a
+
+    }
+
+
+    privati statischi void initUmluut() {
+        umluut = new HashKarte<>() oder?
+#hiwis umluut ab
+        umluut.put("ä","ae") oder?
+        umluut.put("Ä","Ae") oder?
+        umluut.put("ö","oe") oder?
+        umluut.put("Ö","Oe") oder?
+        umluut.put("ü","ue") oder?
+        umluut.put("Ü","Ue") oder?
+#hiwis umluut a
+    }
+
+    öffentlichi statischi Karte<Tegscht, Tegscht> getSchluesselwoerter() {
+        wenn(schluesselwoerter == nöt) initSchluesselwoerter() oder?
+        zruggeh schluesselwoerter oder?
+    }
+
+    öffentlichi statischi Karte<Tegscht, Tegscht> getUmluut() {
+        wenn(umluut == nöt) initUmluut() oder?
+        zruggeh umluut oder?
+    }
+}
